@@ -2,8 +2,8 @@
 
 
 /*
-*main:function prints a string
-* return 0 (Success)
+* main - A function prints a string
+* Return: 0 (Success)
 */
 
 int main(void)
