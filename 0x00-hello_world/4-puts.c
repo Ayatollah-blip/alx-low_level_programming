@@ -4,9 +4,14 @@
 * main - A function prints a string
 * Return: 0 (Success)
 */
-int main(void)/*function thatprints a string omardatni fkarri*/
+int main(void)
+/*Description for function main*/
 {
-
+/*
+*description
+* main - A function prints a string
+* Return: 0 (Success)
+*/
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 
