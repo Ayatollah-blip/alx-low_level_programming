@@ -1,1 +1,3 @@
 -Preprocessor
+-compile witout link output.o
+-compile output.s
