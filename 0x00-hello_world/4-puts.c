@@ -1,11 +1,9 @@
 #include<stdio.h>
-
-
 /*
+*description
 * main - A function prints a string
 * Return: 0 (Success)
 */
-
 int main(void)
 {
 
