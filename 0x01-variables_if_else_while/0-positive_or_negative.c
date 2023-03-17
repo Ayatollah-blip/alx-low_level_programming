@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include<stdio.h>
 /**
   *main - A function that check if n positif, negative , or zero
   *Dscription : bablabl
