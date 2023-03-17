@@ -1,9 +1,8 @@
 #include<stdio.h>
 /**
 * main - print and return
-* Description : blalalabla
 *
-* return: always 0.
+* Return: 0 always .
 */
 int main(void)
 {
