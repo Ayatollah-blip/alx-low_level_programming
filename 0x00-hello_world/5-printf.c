@@ -1,8 +1,11 @@
 #include<stdio.h>
 /**
-*5-printf-printline
-*main - print and return
-*return - 0 successeful
+* main - print and return
+*
+* Description : blalalabla
+*
+* Return 0 (Success)
+* return value of main : blablabla
 */
 
 int main(void)
