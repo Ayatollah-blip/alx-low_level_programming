@@ -1,9 +1,8 @@
 #include<stdio.h>
 /**
 * main - bla blabla
-* bala bal bla
-* Return : Always 0(Success)
-* bla bla bla bla
+*
+* Return: 0 (Success)
 */
 int main(void)
 {
