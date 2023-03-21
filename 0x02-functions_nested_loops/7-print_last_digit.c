@@ -13,6 +13,8 @@ int print_last_digit(int c)
 {
 	int m;
 
+	if (c < 0)
+		c = c * -1;
 	m = c % 10;
 	_putchar(m + '0');
 	return (m);
