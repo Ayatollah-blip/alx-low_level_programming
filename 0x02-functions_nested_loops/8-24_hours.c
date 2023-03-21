@@ -19,6 +19,8 @@ int i, j, k, l;
 			{
 				for (l = 0; l < 10 ; l++)
 				{
+					if (i == 2 && j == 3 && k == 5 && l == 10)
+						break;
 					_putchar(i + '0');
 					_putchar(j + '0');
 					_putchar(':');
@@ -26,7 +28,11 @@ int i, j, k, l;
 					_putchar(l + '0');
 					_putchar('\n');
 				}
+				if (i == 2 && j == 3 && k == 5 && l == 10)
+					break;
 			}
+			if (i == 2 && j == 3 && k == 5 && l == 10)
+				break;
 		}
 		if (i == 2 && j == 3 && k == 5 && l == 10)
 			break;
