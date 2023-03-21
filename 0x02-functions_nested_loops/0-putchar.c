@@ -1,4 +1,4 @@
-#include "_putchar.h"
+#include "main.h"
 /**
 * main - this the main function
 * Description: printing putchar without print
