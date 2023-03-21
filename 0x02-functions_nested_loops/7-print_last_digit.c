@@ -1,0 +1,15 @@
+#include "main.h"
+#include <ctype.h>
+/**
+* print_last_digit - function
+* Description: return last digit
+*
+* @c:  parametre caracter to be checked if lower case
+*
+* Return: last digit (int)
+*
+*/
+int print_last_digit(int c)
+{
+	return (c % 10);
+}
