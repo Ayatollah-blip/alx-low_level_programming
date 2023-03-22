@@ -35,7 +35,7 @@ int i, j, m, d, u;
 						_putchar(' ');
 						_putchar(' ');
 					}
-					else if (j != 9 && d != 0)
+					else if (j != 9 && d == 1)
 					{
 						_putchar(',');
 						_putchar(' ');
