@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
-  *positive_or_negative - A function that check if n positif, negative , or zero
-  *Dscription : bablabl
-  *Return: 0 (Success)
-  */
+* positive_or_negative - A function that check if n positif, negative , or zero
+* Dscription : bablabl
+* @i: parameter (Success)
+*/
 void positive_or_negative(int i)
 {
 	if (i > 0)
