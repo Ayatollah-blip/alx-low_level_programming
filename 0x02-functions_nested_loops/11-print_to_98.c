@@ -33,6 +33,8 @@ if ( n <= 98)
 		}
 	}
 }
+else
+{
 	for (i = n ; i > 97 ; i++)
 	{
 		if (i > 99)
@@ -58,5 +60,6 @@ if ( n <= 98)
 			_putchar(' ');
 		}
 	}
+}
 	_putchar('\n');
 }
