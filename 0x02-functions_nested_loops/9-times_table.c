@@ -30,6 +30,7 @@ int i, j, m, d, u;
 						_putchar(u);
 						_putchar(',');
 						_putchar(' ');
+					}
 		}
 		_putchar('\n');
 	}
