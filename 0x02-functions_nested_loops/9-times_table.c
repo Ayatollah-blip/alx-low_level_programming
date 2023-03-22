@@ -16,7 +16,7 @@ int i, j, m, d, u;
 		for (j = 0; j < 10 ; j++)
 		{
 					m=i*j;
-					if(m < 9)
+					if(m < 10)
 					{		
 						_putchar(m + '0');
 						_putchar(',');
@@ -28,8 +28,11 @@ int i, j, m, d, u;
 						d = m / 10;
 						_putchar(d + '0');
 						_putchar(u + '0');
-						_putchar(',');
-						_putchar(' ');
+						if (d != 9)
+						{
+							_putchar(',');
+							_putchar(' ');
+						}
 					}
 		}
 		_putchar('\n');
