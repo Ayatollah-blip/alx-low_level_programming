@@ -18,28 +18,24 @@ int i, j, m, d, u;
 					m=i*j;
 					u = m % 10;
 					d = m / 10;
-					if (m < 10)
-					{		
-						_putchar(m + '0');
-					
+					if (m > 9)
+					{
+						_putchar(44);
+						_putchar(32);
+						_putchar(32);
+						_putchar(d + '0');
+						_putchar(u + '0');	
 					}
 					else
 					{
-						_putchar(d + '0');
-						_putchar(u + '0');
-					
+						_putchar(m + '0');
+						if (j != 9)
+						{
+							_putchar(44);
+							_putchar(32);
+						}
 					}
-					if (j != 9 && d == 0)
-					{
-						_putchar(44);
-						_putchar(32);
-						_putchar(32);
-					}
-					else if (j != 9 && d > 0)
-					{
-						_putchar(44);
-						_putchar(32);
-					}
+				
 		}
 		_putchar('\n');
 	}
