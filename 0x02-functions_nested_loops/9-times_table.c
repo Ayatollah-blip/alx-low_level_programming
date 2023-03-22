@@ -39,5 +39,6 @@ int i, j, m, d, u;
 						}
 					}
 		}
+		_putchar('\n');
 	}
 }
