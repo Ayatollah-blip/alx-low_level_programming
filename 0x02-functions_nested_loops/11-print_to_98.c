@@ -3,15 +3,12 @@
 /**
 * print_to_98 - function
 * Description: print from n to 08
-*
 * @n:  parametre caracter to be started counting with
-*
-*
 */
 void print_to_98(int n)
 {
 	int i, u, d, c, dd, un, cn, ddn, dn;
-if ( n <= 98)
+if (n <= 98)
 {
 	for (i = n ; i < 99 ; i++)
 	{
@@ -21,18 +18,6 @@ if ( n <= 98)
 			d = i / 10;
 			_putchar(d + '0');
 			_putchar(u + '0');
-		}
-		else if (i < -99)
-		{
-			i = i * -1;
-			un = i % 10;
-			dn = i / 10;
-			ddn = dn % 10;
-			cn = dn / 10;
-			_putchar('-');
-			_putchar(cn + '0');
-			_putchar(ddn + '0');
-			_putchar(un + '0');
 		}
 		else
 		{
