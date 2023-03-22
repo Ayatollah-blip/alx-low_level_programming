@@ -29,7 +29,7 @@ int i, j, m, d, u;
 						d = m / 10;
 						_putchar(d + '0');
 						_putchar(u + '0');
-						if (d != 9)
+						if (j != 9)
 						{
 							_putchar(',');
 							_putchar(' ');
