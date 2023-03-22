@@ -26,8 +26,8 @@ int i, j, m, d, u;
 					{
 						u = m % 10;
 						d = m / 10;
-						_putchar(d);
-						_putchar(u);
+						_putchar(d + '0');
+						_putchar(u + '0');
 						_putchar(',');
 						_putchar(' ');
 					}
