@@ -31,14 +31,14 @@ int i, j, m, d, u;
 					}
 					if (j != 9 && d == 0)
 					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
+						_putchar(44);
+						_putchar(32);
+						_putchar(32);
 					}
 					else if (j != 9 && d > 0)
 					{
-						_putchar(',');
-						_putchar(' ');
+						_putchar(44);
+						_putchar(32);
 					}
 		}
 		_putchar('\n');
