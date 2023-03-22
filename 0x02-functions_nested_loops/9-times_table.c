@@ -19,9 +19,12 @@ int i, j, m, d, u;
 					if(m < 10)
 					{		
 						_putchar(m + '0');
-						_putchar(',');
-						_putchar( ' ');
-						_putchar(' ');
+						if(j != 9)
+						{
+							_putchar(',');
+							_putchar( ' ');
+							_putchar(' ');
+						}
 					}
 					else
 					{
@@ -36,6 +39,5 @@ int i, j, m, d, u;
 						}
 					}
 		}
-		_putchar('\n');
 	}
 }
