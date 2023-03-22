@@ -28,12 +28,9 @@ int i, j, m, d, u;
 					else
 					{
 						_putchar(m + '0');
-						if (j != 9)
-						{
 							_putchar(44);
 							_putchar(32);
 							_putchar(32);
-						}
 					}
 				
 		}
