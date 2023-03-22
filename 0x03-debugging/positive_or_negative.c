@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
 * positive_or_negative - A function that check if n positif, negative , or zero
