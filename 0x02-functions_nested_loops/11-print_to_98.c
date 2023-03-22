@@ -35,7 +35,7 @@ if ( n <= 98)
 }
 else
 {
-	for (i = n ; i > 97 ; i++)
+	for (i = n ; i > 97 ; i--)
 	{
 		if (i > 99)
 		{
