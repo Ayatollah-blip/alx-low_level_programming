@@ -27,8 +27,8 @@ if ( n <= 98)
 			i = i * -1;
 			un = i % 10;
 			dn = i / 10;
-			ddn = d % 10;
-			cn = d / 10;
+			ddn = dn % 10;
+			cn = dn / 10;
 			_putchar('-');
 			_putchar(cn + '0');
 			_putchar(ddn + '0');
