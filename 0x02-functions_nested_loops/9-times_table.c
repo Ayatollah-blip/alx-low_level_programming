@@ -21,6 +21,7 @@ int i, j, m, d, u;
 						_putchar(m + '0');
 						_putchar(',');
 						_putchar( ' ');
+						_putchar(' ');
 					}
 					else
 					{
