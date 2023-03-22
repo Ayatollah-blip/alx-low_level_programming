@@ -16,7 +16,7 @@ int i, j, m;
 		for (j = 0; j < 10 ; j++)
 		{
 					m=i*j;		
-					_putchar('0' + m);
+					_putchar(m + '0');
 					_putchar(',');
 					_putchar( ' ');
 
