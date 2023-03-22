@@ -12,7 +12,7 @@ void print_to_98(int n)
 {
 	int i, u, d;
 
-	for (i=n ; i < 99 ; i++)
+	for (i = n ; i < 99 ; i++)
 	{
 		if (i > 9)
 		{
@@ -20,7 +20,6 @@ void print_to_98(int n)
 			d = i / 10;
 			_putchar(d + '0');
 			_putchar(u + '0');
-				
 		}
 		else
 		{
@@ -32,4 +31,5 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
+	_putchar('\n');
 }
