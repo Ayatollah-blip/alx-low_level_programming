@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* 1-isdigit - function
+* _isdigit - function
 * Description: function detects if the input is a digit or not
 *
-* @c: function parameter 
+* @c: function parameter
 * Return: 1 if digit and 0 otherwise
 */
 int _isdigit(int c)
