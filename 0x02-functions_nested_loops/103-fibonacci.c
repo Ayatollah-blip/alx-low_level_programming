@@ -16,7 +16,7 @@ sum = 0;
 t1 = 0;
 t2 = 1;
 nextTerm = t1 + t2;
-printf("%d", nextTerm);
+
 while (nextTerm < 4000000)
 {
 	t1 = t2;
@@ -28,6 +28,6 @@ while (nextTerm < 4000000)
 	}
 }
 
-printf("%d\n",sum);
+printf("%ld\n",sum);
 return (0);
 }
