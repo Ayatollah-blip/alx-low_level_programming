@@ -27,6 +27,6 @@ while (nextTerm < 4000000)
 	}
 }
 
-printf("%ld\n",sum);
+printf("%ld\n", sum);
 return (0);
 }
