@@ -9,7 +9,6 @@
 
 int main(void)
 {
-int i;
 long int  t1, t2, nextTerm, sum;
 
 sum = 0;
