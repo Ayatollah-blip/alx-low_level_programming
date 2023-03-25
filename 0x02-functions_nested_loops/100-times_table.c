@@ -24,7 +24,6 @@ int i, j, m, d, u, dd, c;
 				c = d / 10;
 				_putchar(44);
 				_putchar(32);
-				_putchar(32);
 				_putchar(c + '0');
 				_putchar(dd + '0');
 				_putchar(u + '0');
