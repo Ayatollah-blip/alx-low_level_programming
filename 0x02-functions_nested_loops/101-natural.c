@@ -18,7 +18,7 @@ for (i = 1 ; i < 1024 ; i++)
 		sum = sum + i;
 }
 
-printf("The sum of these multiples is %d \n", sum);
+printf("%d \n", sum);
 
 return (0);
 }
