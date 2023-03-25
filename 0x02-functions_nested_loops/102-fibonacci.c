@@ -23,7 +23,7 @@ for (i = 1 ; i < 51 ; i++)
 	 	printf("%d, ", nextTerm);
 	}
 	else
-		printf("%d\n", nextTerm);
+		printf("%d \n", nextTerm);
 	t1 = t2;
 	t2 = nextTerm;
 	nextTerm = t1 + t2;
