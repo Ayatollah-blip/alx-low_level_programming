@@ -10,7 +10,7 @@
 int main(void)
 {
 int i;
-long long  t1, t2, nextTerm;
+int  t1, t2, nextTerm;
 
 t1 = 0;
 t2 = 1;
@@ -20,10 +20,10 @@ for (i = 1 ; i < 51 ; i++)
 {
 	if (i != 50)
 	{
-	 	printf("%lli, ", nextTerm);
+	 	printf("%d, ", nextTerm);
 	}
 	else
-		printf("%lli\n", nextTerm);
+		printf("%d\n", nextTerm);
 	t1 = t2;
 	t2 = nextTerm;
 	nextTerm = t1 + t2;
