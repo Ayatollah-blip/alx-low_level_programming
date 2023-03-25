@@ -9,18 +9,24 @@
 
 int main(void)
 {
-int i, sum;
+int i;
+long long  t1, t2, nextTerm;
 
-sum = 0;
+t1 = 0;
+t2 = 1;
+nextTerm = t1 + t2;
+
 for (i = 1 ; i < 51 ; i++)
-{	
-	 sum = sum + i;	
+{
 	if (i != 50)
 	{
-	 	printf("%d, ", sum);
+	 	printf("%lli, ", nextTerm);
 	}
 	else
-		printf("%d\n", sum);
+		printf("%lli\n", nextTerm);
+	t1 = t2;
+	t2 = nextTerm;
+	nextTerm = t1 + t2;
 }
 
 
