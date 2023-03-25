@@ -20,10 +20,10 @@ for (i = 1 ; i < 51 ; i++)
 {
 	if (i != 50)
 	{
-	 	printf("%d, ", nextTerm);
+	 	printf("%ld, ", nextTerm);
 	}
 	else
-		printf("%d \n", nextTerm);
+		printf("%ld \n", nextTerm);
 	t1 = t2;
 	t2 = nextTerm;
 	nextTerm = t1 + t2;
