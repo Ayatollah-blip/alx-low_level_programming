@@ -22,5 +22,5 @@ while (p != -1)
 	p--;
 	s--;
 }
-putchar('\n');
+
 }
