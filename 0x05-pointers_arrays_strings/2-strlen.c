@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strlen - function 
+* _strlen - function
 * Description: calculate the length of a string
 *
 * @s: insert address that her value to be started length sum from
