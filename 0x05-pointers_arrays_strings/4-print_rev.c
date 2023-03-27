@@ -16,7 +16,7 @@ while (*s != '\0')
 	p++;
 	s++;
 }
-while (p != -1)
+while (p != 0)
 {
 	p--;
 	s--;
