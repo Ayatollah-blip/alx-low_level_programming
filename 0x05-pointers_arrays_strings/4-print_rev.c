@@ -16,7 +16,7 @@ while (*s != '\0')
 	p++;
 	s++;
 }
-while (p != 0)
+while (p != -1)
 {
 	putchar(*s);
 	p--;
