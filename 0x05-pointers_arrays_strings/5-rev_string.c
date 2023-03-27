@@ -17,7 +17,7 @@ while (*s != '\0')
 	i++;
 	s++;
 }
-while (p != 0)
+while (i != 0)
 {
 	*s = *(s - i);
 	*s = *p;
