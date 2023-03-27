@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_rev - function
+* rev_string - function
 * Description: print a string in reverse
 *
 * @s: insert address that her value to be printed in reverse
@@ -9,7 +9,7 @@
 * Return: pointer of reversed string
 */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 int *p, i = 0;
 
