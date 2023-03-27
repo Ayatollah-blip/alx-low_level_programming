@@ -4,6 +4,6 @@
 #include <stdio.h>
 
 void reset_to_98(int *n);
-
+void rev_string(char *s);
 
 #endif /* MAIN_H */
