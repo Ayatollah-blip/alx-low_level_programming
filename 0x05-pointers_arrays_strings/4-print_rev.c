@@ -6,7 +6,6 @@
 *
 * @s: insert address that her value to be printed in reverse
 *
-* Return: pointer of reversed string
 */
 
 void rev_string(char *s)
@@ -27,5 +26,4 @@ while (p != 0)
 	i--;
 	s--;
 }
-return (char *s)
 }
