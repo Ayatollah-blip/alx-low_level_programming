@@ -18,9 +18,9 @@ while (*s != '\0')
 }
 while (p != -1)
 {
-	putchar(*s);
 	p--;
 	s--;
+	putchar(*s);
 }
-
+putchar('\n');
 }
