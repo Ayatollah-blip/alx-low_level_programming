@@ -6,7 +6,7 @@
 *
 * @s: insert address that her value to be started length sum from
 *
-* return: return length of a string
+* Return: p as a length of a string
 */
 
 int _strlen(char *s)
