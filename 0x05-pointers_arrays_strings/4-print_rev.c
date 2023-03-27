@@ -1,28 +1,26 @@
 #include "main.h"
+
 /**
-* rev_string - function
+* print_rev - function
 * Description: print a string in reverse
 *
 * @s: insert address that her value to be printed in reverse
-*
 */
 
-void rev_string(char *s)
+void print_rev(char *s)
 {
-int *p, i = 0;
+int p = 0;
 
 while (*s != '\0')
 {
-	*p = *s;
-	i++;
+	p++;
 	s++;
 }
 while (p != 0)
 {
-	*s = *(s - i);
-	*s = *p;
 	p--;
-	i--;
 	s--;
+	putchar(*s);
 }
+putchar('\n');
 }
