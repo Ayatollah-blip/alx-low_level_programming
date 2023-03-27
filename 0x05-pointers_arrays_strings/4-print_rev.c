@@ -7,7 +7,7 @@
 * @s: insert address that her value to be printed in reverse
 */
 
-void _print_rev(char *s)
+void print_rev(char *s)
 {
 
 while (*s != '\0')
