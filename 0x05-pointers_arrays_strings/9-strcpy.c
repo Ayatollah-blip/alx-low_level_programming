@@ -21,4 +21,4 @@ while (*dest != '\0')
 }
 
 return (dest - i);
-
+}
