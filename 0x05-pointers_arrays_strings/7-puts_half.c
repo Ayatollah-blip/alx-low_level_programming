@@ -17,6 +17,7 @@ while (*str != '\0')
 	p++;
 }
 p = p / 2;
+str = str - p;
 while (p != 0)
 {
 	putchar(*str);
