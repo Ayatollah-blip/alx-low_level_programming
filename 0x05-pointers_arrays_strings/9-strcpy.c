@@ -8,7 +8,7 @@
 *
 */
 
-char _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 
 while (*src != '\0')
@@ -16,6 +16,7 @@ while (*src != '\0')
 	*dest = *src;
 	src++;
 	dest++;
+	printf("%c",*dest);
 }
 return (dest);
 }
