@@ -10,16 +10,20 @@
 void rev_string(char *s)
 {
 int  i = 0;
+int *p = NULL;
 
 while (*s != '\0')
 {
-/*	*p = *s;*/
+	*p = *s;
 	i++;
 	s++;
+	p++;
 }
+s = s - i;
 while (i != 0)
 {
-	/*(s - i) = *s;*/
+	*s = *p;
 	s++;
+	p--;
 }
 }
