@@ -14,13 +14,12 @@ int p = 0;
 while (*str != '\0')
 {
 	p++;
-	str++;
 }
 p = p / 2;
 while (p != 0)
 {
 	p--;
-	str--;
+	str++;
 	putchar(*str);
 }
 putchar('\n');
