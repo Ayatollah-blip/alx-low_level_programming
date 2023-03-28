@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_rev - function
+* puts_half - function
 * Description: print half of a string
 *
 * @str: insert address that her value to be printed in half
