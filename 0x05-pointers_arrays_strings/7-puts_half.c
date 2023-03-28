@@ -11,17 +11,17 @@ void puts_half(char *str)
 {
 int p = 0;
 
-while (*s != '\0')
+while (*str != '\0')
 {
 	p++;
-	s++;
+	str++;
 }
 p = p / 2;
 while (p != 0)
 {
 	p--;
-	s--;
-	putchar(*s);
+	str--;
+	putchar(*str);
 }
 putchar('\n');
 }
