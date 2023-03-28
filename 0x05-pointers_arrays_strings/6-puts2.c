@@ -14,7 +14,8 @@ while (*str != '\0')
 {
 	putchar(*str);
 	str++;
-	str++;
+	if (*str != '\0')
+		str++;
 
 
 }
