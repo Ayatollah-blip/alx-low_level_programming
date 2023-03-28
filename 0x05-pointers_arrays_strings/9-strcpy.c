@@ -6,6 +6,7 @@
 * @src: parameter that her value to be copied
 * @dest: parameter that her value to be copied from
 *
+* Return address of the string to be printed
 */
 
 char *_strcpy(char *dest, char *src)
@@ -18,5 +19,7 @@ while (*src != '\0')
 	src++;
 	i++;
 }
+dest = src;
+
 return (dest - i);
-}
+
