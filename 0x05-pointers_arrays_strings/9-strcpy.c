@@ -16,5 +16,5 @@ while (*src != '\0')
 	dest++;
 	src++;
 }
-return *(dest);
+return dest;
 }
