@@ -13,8 +13,10 @@ int p = 0;
 
 while (*str != '\0')
 {
+	str++;
 	p++;
 }
+str = str - p;
 p = p / 2;
 while (p != 0)
 {
