@@ -18,9 +18,10 @@ while (*str != '\0')
 p = p / 2;
 while (p != 0)
 {
-	p--;
-	str++;
 	putchar(*str);
+	str++;
+	p--;
 }
+
 putchar('\n');
 }
