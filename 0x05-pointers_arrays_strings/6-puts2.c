@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-* _puts - function
+* puts2 - function
 * Description: print a string
 *
 * @str: insert address that her value to be started length sum from
 */
 
-void _puts(char *str)
+void puts2(char *str)
 {
 
 while (*str != '\0')
