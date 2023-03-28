@@ -19,7 +19,7 @@ while (*s != '\0')
 	s++;
 	p++;
 }
-s = s - i;
+s = s - i -1;
 while (i != 0)
 {
 	*s = *p;
