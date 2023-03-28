@@ -21,7 +21,7 @@ str = str - p;
 while (p != 0)
 {
 	putchar(*str);
-	str--;
+	str++;
 	p--;
 }
 
