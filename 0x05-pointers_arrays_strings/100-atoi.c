@@ -21,11 +21,11 @@ while (*s != '\0')
 	{
 		if (i < 0)
 		{
-			sum = i * ((sum * 10) + (*s - 48));
+			sum = i * (sum * 10 + (*s - 48));
 			i = 1;
 		}
 		else 
-			sum = i * ((sum * 10) + (*s - 48));
+			sum = i * (sum * 10 + (*s - 48));
 	
 	}
 	else
