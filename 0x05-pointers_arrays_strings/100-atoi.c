@@ -1,12 +1,11 @@
 #include "main.h"
 /**
-* *_strcpy - function
-* Description: copy a string to a source
+* *_atoi - function
+* Description: convert a string to a int
 *
-* @src: parameter that her value to be copied
-* @dest: parameter that her value to be copied from
+* @s: parameter that her value to be converted
 *
-* Return:  address of the string to be printed
+* Return:  sum of the string to be printed
 */
 
 int _atoi(char *s)
@@ -16,13 +15,10 @@ int sum = 0, i = 0;
 while (*s != '\0')
 {
 	if (*s == 45)
-		i++;
+		i = i * -1;
 	if (*s >= 48 && *s <= 57 )
 	{
-		if ((i  % 2) != 0)
-			sum = -1 * ((sum * 10) + (*s - 48));
-		else	
-			sum = (sum * 10) + (*s - 48);
+		sum = -i * ((sum * 10) + (*s - 48));
 	}
 	s++;
 }
