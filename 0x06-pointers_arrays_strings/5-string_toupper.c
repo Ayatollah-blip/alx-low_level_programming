@@ -8,7 +8,7 @@
 * Return:  sum of the string to be printed
 */
 
-int *string_toupper(char *s)
+char *string_toupper(char *s)
 {
 int sum = 0, i = 0;
 
