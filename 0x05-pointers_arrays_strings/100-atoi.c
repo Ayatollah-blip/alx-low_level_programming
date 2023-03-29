@@ -23,7 +23,6 @@ while (*s != '\0')
 	}
 	s++;
 }
-printf("%d",i);
 
 return sum;
 }
