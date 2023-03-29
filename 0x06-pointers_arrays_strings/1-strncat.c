@@ -20,12 +20,11 @@ while (*dest != '\0')
 	i++;
 }
 while (j < n)
-{
+{	j++;
 	*dest  = *src;
 	dest++;
 	src++;
 	i++;
-	j++;
 }
 
 dest = dest - i;
