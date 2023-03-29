@@ -13,17 +13,19 @@ int _strcmp(char *dest, char *src)
 {
 int i = 0;
 
-while (*dest != '\0')
-{
-	i = i + (*dest - 38);
-	dest++;
-}
 while (*src != '\0')
 {
-	i = i - (*src - 38);
-	src++;
+	if (*dest != *src)
+	{
+		i = i + (*dest - *src);
+		break ;
+	}	
+	else if (*dest == *src)
+	{
+		dest++;
+		src++;	
+	}
 }
-
 
 return (i);
 }
