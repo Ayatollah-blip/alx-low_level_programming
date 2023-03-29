@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* *string_toupper - function
+* *cap_string - function
 * Description: convert a string to a int
 *
 * @s: parameter that her value to be converted
@@ -8,7 +8,7 @@
 * Return:  sum of the string to be printed
 */
 
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 int  i = 0;
 
