@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* *_strcpy - function
+* *_strncpy - function
 * Description: copy a string to a source
 *
 * @src: parameter that her value to be copied
