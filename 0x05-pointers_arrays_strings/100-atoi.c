@@ -11,7 +11,7 @@
 
 int _atoi(char *s)
 {
-int sum = 0,int i = 0;
+int sum = 0, i = 0;
 
 while (*s != '\0')
 {
