@@ -18,12 +18,12 @@ while (*src != '\0')
 	if (*dest != *src)
 	{
 		i = i + (*dest - *src);
-		break ;
-	}	
+		break;
+	}
 	else if (*dest == *src)
 	{
 		dest++;
-		src++;	
+		src++;
 	}
 }
 
