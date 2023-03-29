@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strcat - function
- * Description: concatenate two strings
+ * _strcmp - function
+ * Description: compare two strings
  *
  * @dest: parameter to be returned
  * @src: parameter to copy from
