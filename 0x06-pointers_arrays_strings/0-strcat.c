@@ -11,16 +11,21 @@
  */
 char *_strcat(char *dest, char *src)
 {
+int i = 0;
 
 while (*dest)
 {
 	dest++;
+	i++;
 }
 while (*src != '\n')
 {
 	*dest  = *src;
 	dest++;
 	src++;
+	i++;
 }
+dest = dest - i;
+
 return (dest);
 }
