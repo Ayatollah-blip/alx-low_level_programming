@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_array - function
+* reverse_array - function
 * Description: print an array
 *
 * @a: insert address og the array
