@@ -20,9 +20,9 @@ while (*s != '\0')
 		*s = *s - 32;
 	}
 	s++;
-	i++;
+	s = s - i;
 }
-s = s - i;
+
 
 return (s);
 }
