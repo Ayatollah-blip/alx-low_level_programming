@@ -3,10 +3,12 @@
 /**
  * _strcat - function
  * Description: concatenate two strings
- * 
- * Return: adress of 
- * */
-
+ *
+ * @dest: parameter to be returned
+ * @src: parameter to copy from
+ *
+ * Return: adress of
+ */
 char *_strcat(char *dest, char *src)
 {
 
