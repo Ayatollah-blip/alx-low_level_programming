@@ -28,6 +28,8 @@ while (*s != '\0')
 			sum = i * ((sum * 10) + (*s - 48));
 	
 	}
+	else
+		sum = 0;
 	s++;
 }
 
