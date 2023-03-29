@@ -2,12 +2,9 @@
 /**
 * *cap_string - function
 * Description: convert a string to a int
-*
 * @s: parameter that her value to be converted
-*
 * Return:  sum of the string to be printed
 */
-
 char *cap_string(char *s)
 {
 int  i = 0;
@@ -29,17 +26,13 @@ while (*s != '\0')
 			*s = *s - 32;
 		else if (*(s - 1) == '"')
 			*s = *s - 32;
-		else if (*(s - 1) == '(')
+		else if (*(s - 1) == '(' || *(s - 1) == ')')
 			*s = *s - 32;
-		else if (*(s - 1) == ')')
-			*s = *s - 32;
-		else if (*(s - 1) == '{')
-			*s = *s - 32;
-		else if (*(s - 1) == '}')
+		else if (*(s - 1) == '{' || *(s - 1) == '}')
 			*s = *s - 32;
 		else if (*(s - 1) == ' ')
 			*s = *s - 32;
-		else if (*(s - 1) == '	')
+		else if (*(s - 1) == '\t')
 			*s = *s - 32;
 		else if (*(s - 1) == '\n')
 			*s = *s - 32;
@@ -47,8 +40,6 @@ while (*s != '\0')
 	s++;
 	i++;
 }
-
 s = s - i;
-
 return (s);
 }
