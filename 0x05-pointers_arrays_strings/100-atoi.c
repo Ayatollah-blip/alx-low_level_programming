@@ -11,7 +11,7 @@
 
 int _atoi(char *s)
 {
-int sum = 0, i = -1;
+int sum = 0, i = 0;
 
 while (*s != '\0')
 {
@@ -19,7 +19,7 @@ while (*s != '\0')
 		i++;
 	if (*s >= 48 && *s <= 57 )
 	{
-		if ((i % 2) != 0)
+		if (((i -1) % 2) != 0)
 			sum = -1 * (sum * 10 + (*s - 48));
 		else
 			sum = sum * 10 + (*s - 48);
