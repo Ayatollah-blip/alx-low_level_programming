@@ -19,6 +19,7 @@ while (*dest != '\0')
 	dest++;
 	i++;
 }
+
 while (j < n)
 {	j++;
 	*dest  = *src;
