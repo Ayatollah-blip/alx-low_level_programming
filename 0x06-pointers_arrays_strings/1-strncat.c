@@ -6,6 +6,7 @@
  *
  * @dest: parameter to be returned
  * @src: parameter to copy from
+ * @n: parameter to be stoped
  *
  * Return: adress of
  */
