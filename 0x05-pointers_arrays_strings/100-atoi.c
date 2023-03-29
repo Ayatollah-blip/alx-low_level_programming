@@ -18,6 +18,8 @@ while (*s != '\0')
 		i = i * -1;
 	else if (*s == 43)
 		i = i * 1;
+	else
+		i = i;
 
 	if (*s < 58 && *s > 47)
 	{
@@ -28,7 +30,6 @@ while (*s != '\0')
 		}
 		else
 			sum = i * (sum * 10 + (*s - 48));
-		
 	}
 	s++;
 }
