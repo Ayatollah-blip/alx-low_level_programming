@@ -7,26 +7,19 @@
 */
 char *leet(char *s)
 {
-int  i = 0;
-
+int  i = 0, j;
+char org[11] = "aAeEoOtTlL";
+char let[11] = "4433007711";
 while (*s != '\0')
 {
-		if (*s == 'a' || *s == 'A')
-			*s = '4';
-		else if (*s == 'e' || *s == 'E')
-			*s = '3';
-		else if (*s == 'o' || *s == 'O')
-			*s = 0;
-		else if (*s == 't' || *s == 'T')
-			*s = 7;
-		else if (*s == 'l' || *s == 'L')
-			*s = 1;
-		else
-			*s = *s;
-}
+	for (j = 0 ; j > 11 ; j++)
+	{
+		if (*s == org[j])
+			*s = let[j];
+	}
 	s++;
 	i++;
-
+}
 s = s - i;
 return (s);
 }
