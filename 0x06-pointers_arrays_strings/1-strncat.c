@@ -21,7 +21,7 @@ while (*dest != '\0')
 	i++;
 }
 
-while (j < n)
+while (j < n && *src != '\0')
 {	j++;
 	*dest  = *src;
 	dest++;
