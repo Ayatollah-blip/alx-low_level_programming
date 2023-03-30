@@ -1,17 +1,16 @@
 #include "main.h"
 /**
-* *cap_string - function
+* *leet - function
 * Description: convert a string to a int
 * @s: parameter that her value to be converted
 * Return:  sum of the string to be printed
 */
-char *cap_string(char *s)
+char *leet(char *s)
 {
 int  i = 0;
 
 while (*s != '\0')
 {
-
 	if (*s < 123 && *s > 96)
 	{
 		if (*s == 'a' || *s == 'A')
