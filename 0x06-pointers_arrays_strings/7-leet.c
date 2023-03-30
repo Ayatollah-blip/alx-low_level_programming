@@ -12,7 +12,7 @@ char org[] = "aAeEoOtTlL";
 char let[] = "4433007711";
 while (*s != '\0')
 {
-	for (j = 0 ; j < 9 ; j++)
+	for (j = 0 ; j <= 9 ; j++)
 	{
 		if (*s == org[j])
 		{
