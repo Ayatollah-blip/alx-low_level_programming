@@ -16,6 +16,7 @@ int i = 0, j = 0;
 
 while (*dest != '\0')
 {
+	*dest = *dest;
 	dest++;
 	i++;
 }
