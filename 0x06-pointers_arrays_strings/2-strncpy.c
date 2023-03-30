@@ -23,6 +23,12 @@ if (n > 0)
 		src++;
 		i++;
 	}
+	while (j < n)
+	{
+		*dest = '\n';
+		dest++;
+		j++;
+	}
 }
 return (dest - i);
 }
