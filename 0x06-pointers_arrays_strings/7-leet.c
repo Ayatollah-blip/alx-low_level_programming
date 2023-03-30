@@ -23,10 +23,10 @@ while (*s != '\0')
 			*s = 1;
 		else
 			*s = *s;
-	}
+}
 	s++;
 	i++;
-}
+
 s = s - i;
 return (s);
 }
