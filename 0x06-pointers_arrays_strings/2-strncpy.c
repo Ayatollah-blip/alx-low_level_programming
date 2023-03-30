@@ -16,7 +16,7 @@ int i = 0;
 
 if (n > 0)
 {
-	while (i < n)
+	while (i < n && *src != '\n')
 	{
 		*dest = *src;
 		dest++;
