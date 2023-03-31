@@ -10,14 +10,16 @@
 
 void reverse_array(int *a, int n)
 {
-int i, constVar;
-if (n > 0)
+int i = 0;
+int constVar;
+
+while (i < n)
 {
-	for (i = 0 ; i < n ; i++)
-	{
-		constVar = *(a + n - i);
-		*(a + n - i) = *(a + i);
-		*(a + i) = constVar;
-	}
+	n--;
+	constVar = *(a + i);
+	*(a + i) = *(a + n);
+	*(a + n) = constVar;
+	i++;
 }
+n = n + i;
 }
