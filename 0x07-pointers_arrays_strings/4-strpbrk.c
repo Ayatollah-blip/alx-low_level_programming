@@ -14,19 +14,18 @@ char *pnt;
 
 while (*s != '\0')
 {
-	while (*accept != '\0')
-	{
-		if (*s == c)
+/**	while (*accept != '\0')
+	{*/
+		if (*s == *accept)
 		{
 			pnt = s;
 			break;
 		}
 		accept++;
 		pnt = NULL;
-	}
+/**	}*/
 	s++;
-
 }
 
-return (pnt);
+return (pnt - 1);
 }
