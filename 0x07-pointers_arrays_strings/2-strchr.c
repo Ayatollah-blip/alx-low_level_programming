@@ -15,9 +15,11 @@ char *pnt;
 
 while (*s != '\0')
 {
-	if (*s == b)
-		pnt = s;
-		break;
+	if (*s == c)
+	{
+	pnt = s;
+	break;
+	}
 	pnt = NULL;
 	s++;
 	i++;
