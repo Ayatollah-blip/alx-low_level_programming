@@ -27,5 +27,5 @@ while (*s != '\0')
 	s++;
 }
 
-return (pnt - 1);
+return (pnt);
 }
