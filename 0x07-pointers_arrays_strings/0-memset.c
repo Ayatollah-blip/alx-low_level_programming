@@ -3,14 +3,16 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 unsigned int i = 0;
-while (i < n && *s != '\0')
+
+while (i < n)
 {
 	*s = b;
 	s++;
 	i++;
+	printf("%c",*s);
 }
 
-s = s -i;
+s = s - i;
 
 return (s);
 }
