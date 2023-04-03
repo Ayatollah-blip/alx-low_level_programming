@@ -9,5 +9,8 @@ while (i < n && *s != '\0')
 	s++;
 	i++;
 }
+
+s = s -i;
+
 return (s);
 }
