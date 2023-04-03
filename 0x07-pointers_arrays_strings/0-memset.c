@@ -18,7 +18,6 @@ while (i < n)
 	*s = b;
 	s++;
 	i++;
-	printf("%c", *s);
 }
 
 s = s - i;
