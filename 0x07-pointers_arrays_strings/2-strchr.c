@@ -18,9 +18,7 @@ while (*s != '\0')
 	if (*s == b)
 		pnt = s;
 		break;
-	else
-		pnt = NULL;
-
+	pnt = NULL;
 	s++;
 	i++;
 }
