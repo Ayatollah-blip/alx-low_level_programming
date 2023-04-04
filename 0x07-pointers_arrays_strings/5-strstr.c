@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* _strpbrk - function
-* Description: mem set
+* _strstr - function
+* Description: fetect substring
 *
 * @s: string
 * @accept: character
@@ -22,22 +22,18 @@ while (*s != '\0')
 			pnt = s;
 			break;
 		}
-		else 
-		{
-			pnt = NULL;
-			break;
-		}
 		accept++;
 		i++;
 	}
+	accept = accept - i;
 	if (*s != *accept)
 	{
-		accept = accept - i;
 		i = 0;
 		s++;
 	}
 	else
 		break;
+
 
 }
 return (pnt);
