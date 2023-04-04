@@ -1,14 +1,14 @@
 #include "main.h"
 /**
-* _strstr - function
-* Description: return substring if exist
+* _strpbrk - function
+* Description: mem set
 *
-* @haystack: string
-* @needle: string
+* @s: string
+* @accept: character
 *
 * Return: return string
 */
-char *_strstr(char *haystack, char *needle)
+char *_strstr(char *s, char *accept)
 {
 char *pnt = NULL;
 int i = 0;
@@ -17,22 +17,27 @@ while (*s != '\0')
 {
 	while (*accept != '\0')
 	{
-		if (*s != *accept)
+		if (*s == *accept)
+		{
+			pnt = s;
+			break;
+		}
+		else 
 		{
 			pnt = NULL;
 			break;
 		}
-		else
-		{
-			pnt = *s;
-			accept++;
-			pnt++;	
-			i++;
-		}
+		accept++;
+		i++;
 	}
-	accept = accept - i;
-	i = 0;
-	s++;
+	if (*s != *accept)
+	{
+		accept = accept - i;
+		i = 0;
+		s++;
+	}
+	else
+		break;
 
 }
 return (pnt);
