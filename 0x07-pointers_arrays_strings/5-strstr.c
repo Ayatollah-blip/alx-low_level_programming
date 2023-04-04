@@ -24,7 +24,7 @@ while (*s != '\0')
 		}
 		else
 		{
-			pnt =NULL;
+			pnt = NULL;
 			break;
 		}
 		accept++;
