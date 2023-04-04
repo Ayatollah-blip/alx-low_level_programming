@@ -10,23 +10,13 @@
 */
 char *_strstr(char *s, char *accept)
 {
-char *pnt = NULL;
 int i = 0;
+int j = 0;
 
 while (*s != '\0')
 {
-	while (*accept != '\0')
+	while (*s == *accept && *accept != '\0')
 	{
-		if (*s == *accept)
-		{
-			pnt = s;
-			break;
-		}
-		else
-		{
-			pnt = NULL;
-			break;
-		}
 		accept++;
 		i++;
 	}
@@ -35,11 +25,12 @@ while (*s != '\0')
 		accept = accept - i;
 		i = 0;
 		s++;
+		j++;
 	}
 	else
 		break;
 
 
 }
-return (pnt);
+return (s);
 }
