@@ -22,12 +22,17 @@ while (*s != '\0')
 			pnt = s;
 			break;
 		}
+		else
+		{
+			pnt =NULL;
+			break;
+		}
 		accept++;
 		i++;
 	}
-	accept = accept - i;
 	if (*s != *accept)
 	{
+		accept = accept - i;
 		i = 0;
 		s++;
 	}
