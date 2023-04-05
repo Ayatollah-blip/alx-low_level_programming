@@ -1,36 +1,29 @@
 #include "main.h"
 /**
-* _strstr - function
-* Description: fetect substring
-*
-* @s: string
-* @accept: character
-*
-* Return: return string
-*/
-char *_strstr(char *s, char *accept)
+ * _strstr - Entry point
+ * @s: input
+ * @a: input
+ * Return: Always 0 (Success)
+ */
+char *_strstr(char *s, char *a)
 {
-int i = 0;
-int j = 0;
 
 while (*s != '\0')
 {
-	while (*s == *accept && *accept != '\0')
-	{
-		accept++;
-		i++;
-	}
-	if (*s != *accept)
-	{
-		accept = accept - i;
-		i = 0;
-		s++;
-		j++;
-	}
-	else
-		break;
+	char *t = s;
+	char *r = a;
 
+	while (*t == *r && *r != '\0')
+	{
+		t++;
+		r++;
+	}
 
+	if (*t == '\0')
+	{
+		return (s);
+	}
+	s++;
 }
-return (s);
+return (0);
 }
