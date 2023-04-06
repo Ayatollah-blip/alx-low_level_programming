@@ -10,15 +10,11 @@ int prime_number(int n, int i);
 
 int is_prime_number(int n)
 {
-	int r;
 
 	if (n < 0)
 		return (0);
 	else
-	{	r= (prime_number(n, 2));
-		printf("%d\n",r);
-		return r;
-	}
+		return (prime_number(n, 2)); 
 }
 /**
 *prime_number - function that calculate the square of n base on i
@@ -32,6 +28,7 @@ int prime_number(int n, int i)
 {
 	int num = n % i;
 
+	printf("/d\n",num);
 	if (num ==  0)
 		return (1);
 
