@@ -8,18 +8,15 @@
 */
 int _sqrt_recursion(int n)
 {
-	int i = 1;
-	int j= 1;
-
+	int i = n/2;
+	int j;
 	if (n < 0)
 		return (-1);
-	else if (n == 0)
+	else if (i == j)
 		return (i);
 	else
-	{	
-		i++;
-		j += 2;
-		if (n - j > 0)
-			return (_sqrt_recursion(n - j));
+	{	j=i;
+		i = _sqrt_recursion((i + n/i)/2);
+		return i, j;
 	}
 }
