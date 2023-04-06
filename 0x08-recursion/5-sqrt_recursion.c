@@ -8,20 +8,23 @@
 */
 int _sqrt_recursion(int n)
 {
-	int *j;
-	int i = 0;
-	int k;
-
-	j = &i;
-	k = *j;
-	if (n < 0)
+	return (_sqrt(n,1));
+}
+/**
+*
+*
+*
+*
+*/
+int _sqrt(int n, int i)
+{
+	int square = i * i;
+	
+	if (square > n)
 		return (-1);
-	else if ((k * k) == n)
-		return (k);
+
+	else if (square = n)
+		return (square);
 	else
-	{	
-		i = i + 1;
-		*j = i;
-		return _sqrt_recursion(i);
-	}
+		return (_sqrt(n, i+1));
 }
