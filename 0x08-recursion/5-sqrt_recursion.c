@@ -28,7 +28,7 @@ int _sqrt(int n, int i)
 		return (-1);
 
 	else if (square == n)
-		return (square);
+		return (i);
 	else
 		return (_sqrt(n, i+1));
 }
