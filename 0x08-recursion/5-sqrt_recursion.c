@@ -9,7 +9,7 @@
 int _sqrt_recursion(int n)
 {
 	int *j;
-	int i = n / 2;
+	int i = 0;
 	int k;
 
 	j = &i;
@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 		return (k);
 	else
 	{	
-		i = i -1;
+		i = i + 1;
 		*j = i;
 		return _sqrt_recursion(i);
 	}
