@@ -8,7 +8,6 @@
 */
 int _sqrt_recursion(int n)
 {
-	int i;
 	int *j;
 	if (n < 0)
 		return (-1);
@@ -16,6 +15,6 @@ int _sqrt_recursion(int n)
 		return (i);
 	else
 	{	*j=n;
-		return (sqrt_recursion((i + n/i)/2));
+		return (_sqrt_recursion((i + n/i)/2));
 	}
 }
