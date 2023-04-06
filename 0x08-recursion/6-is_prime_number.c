@@ -26,10 +26,10 @@ int prime_number(int n, int i)
 	int num = n % i;
 
 	if (num ==  0)
-		return(0);
+		return(1);
 
 	else if (num == n)
-		return (1);
+		return (0);
 	else
 		return (prime_number(n, i + 1));
 }
