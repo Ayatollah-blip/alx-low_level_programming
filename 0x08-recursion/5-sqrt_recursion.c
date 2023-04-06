@@ -14,14 +14,14 @@ int _sqrt_recursion(int n)
 
 	j = &i;
 	k = *j;
-	if (k * k == n)
-		return (k);
-	else if (k > n/2)
+	if (n < 0)
 		return (-1);
+	else if ((k * k) == n)
+		return (k);
 	else
 	{	
-		*j = i;
 		i = i -1;
+		*j = i;
 		return _sqrt_recursion(i);
 	}
 }
