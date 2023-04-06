@@ -14,7 +14,7 @@ int is_prime_number(int n)
 	if (n < 0)
 		return (0);
 	else
-		return (prime_number(n, 2)); 
+		return (prime_number(n-1, 2)); 
 }
 /**
 *prime_number - function that calculate the square of n base on i
