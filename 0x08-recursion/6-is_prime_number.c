@@ -3,7 +3,7 @@
 * is_prime_number - function that test if prime number
 *
 * @n: the number to be test if prime number.
-*
+* @i: number to start twsting from
 * Return: result
 */
 int prime_number(int n, int i);
