@@ -10,6 +10,8 @@ int _sqrt_recursion(int n)
 {
 	int *j;
 	int i = n / 2;
+
+	*j = 0;
 	if (n < 0)
 		return (-1);
 	else if (n == *j)
