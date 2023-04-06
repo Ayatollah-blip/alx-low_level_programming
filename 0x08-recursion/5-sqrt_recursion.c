@@ -10,11 +10,13 @@ int _sqrt_recursion(int n)
 {
 	int *j;
 	int i = n / 2;
+	int k;
 
 	j = &i;
-	if ((*j) * (*j) == n)
-		return (*j);
-	else if (*j >= n/2)
+	k = *j;
+	if (k * k == n)
+		return (k);
+	else if (k > n/2)
 		return (-1);
 	else
 	{	
