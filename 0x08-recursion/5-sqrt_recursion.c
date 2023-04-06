@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 	{	
 		*j = i;
 		i = (i + n/i)/2;
-
+		printf("%d", i);
 		return _sqrt_recursion(i);
 	}
 }
