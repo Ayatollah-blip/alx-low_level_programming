@@ -28,7 +28,7 @@ int prime_number(int n, int i)
 {
 	int num = n % i;
 
-	printf("/d\n",num);
+	printf("%d\n",num);
 	if (num ==  0)
 		return (1);
 
