@@ -10,7 +10,7 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-char *pnt = NULL;
+char *pnt;
 int i = 0;
 
 while (*s != '\0')
