@@ -8,7 +8,12 @@
 *
 * Return: 0 (Success)
 */
-int main(int argc, char *argv)
+int main(int argc, char* argv[])
 {
-printf("%s", argv[0]);
+int i;
+
+for(i=0 ; i < argc ; i++)
+	printf("%s \n", argv[i]);
+
+return (0);
 }
