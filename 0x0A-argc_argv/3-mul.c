@@ -48,11 +48,16 @@ return (sum);
 */
 int main(int argc, char *argv[])
 {
+int arg1, arg2, num;
 
+arg1 = _atoi(argv[1]);
+arg2 = _atoi(argv[2]);
+num = arg1 * arg2;
 (void) argc;
 if (argv[1] != NULL && argv[2] != NULL)
 {
-	printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
+	printf("%d\n", num);
+	return (0);
 }
 else
 {
@@ -60,5 +65,4 @@ else
 	return (1);
 }
 
-return (0);
 }
