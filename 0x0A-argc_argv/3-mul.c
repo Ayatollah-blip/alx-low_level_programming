@@ -64,16 +64,14 @@ int arg1, arg2, num;
 arg1 = _atoi(argv[1]);
 arg2 = _atoi(argv[2]);
 num = arg1 *arg2;
-(void) argc;
-if (argv[1] != NULL && argv[2] != NULL)
-{
-	printf("%d\n", num);
-	return (0);
-}
-else
+if (argc < 3 || argc > 3)
 {
 	printf("Error\n");
 	return (1);
 }
-
+else
+{
+	printf("%d\n",num);
+	return (1);
+}
 }
