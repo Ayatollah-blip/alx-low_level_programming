@@ -71,7 +71,7 @@ if (argc < 3 || argc > 3)
 }
 else
 {
-	printf("%d\n",num);
-	return (1);
+	printf("%d\n", num);
+	return (0);
 }
 }
