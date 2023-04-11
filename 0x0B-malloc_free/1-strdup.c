@@ -13,7 +13,7 @@ char *a;
 int i = 0, j = 0;
 
 if (str == NULL)
-	return NULL;
+	return (NULL);
 while (*str != '\0')
 {
 	i++;
