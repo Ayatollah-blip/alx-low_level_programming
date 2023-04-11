@@ -25,6 +25,7 @@ if (a == NULL)
 	return (NULL);
 while (j < i)
 {
+	printf("test");
 	a[j] = str[j];
 	j++;
 }
