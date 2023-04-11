@@ -25,7 +25,7 @@ while (i <= len1)
 }
 j = len2;
 i= 0;
-while (j < len_str)
+while (j < len2)
 {
 	a[j] = s2[i];
 	j++;
