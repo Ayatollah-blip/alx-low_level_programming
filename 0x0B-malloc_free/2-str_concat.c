@@ -24,11 +24,12 @@ while (i <= len1)
 	i++;
 }
 j = len2;
-printf("%d", j);
+i= 0;
 while (j < len_str)
 {
-	a[j] = s2[j];
+	a[j] = s2[i];
 	j++;
+	i++;
 }
 return (a);
 }
