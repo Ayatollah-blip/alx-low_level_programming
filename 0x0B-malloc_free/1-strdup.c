@@ -14,8 +14,8 @@ unsigned int i = 0, j = 0;
 
 while (*str == '\0')
 {
-	str++;
 	i++;
+	str++;
 }
 str = str - i;
 
