@@ -19,7 +19,7 @@ len2 = strlen(s2);
 len_str = len1 + len2;
 a = malloc(len_str * sizeof(char));
 if (a == 0)
-	return NULL;
+	return (NULL);
 
 while (i < len1)
 {
