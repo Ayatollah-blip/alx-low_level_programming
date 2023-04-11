@@ -28,6 +28,5 @@ while (j < i)
 	a[j] = str[j];
 	j++;
 }
-}
 return (a);
 }
