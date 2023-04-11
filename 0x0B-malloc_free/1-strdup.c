@@ -19,9 +19,9 @@ while (*str != '\0')
 }
 str = str - i;
 
-a = malloc(i * sizeof(char));
+a = malloc((i + 1) * sizeof(char));
 
-if (a == NULL)
+if (a == 0)
 	return (NULL);
 while (j < i)
 {
