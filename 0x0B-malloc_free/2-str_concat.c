@@ -24,6 +24,7 @@ while (i <= len1)
 	i++;
 }
 j = len2;
+printf("%d", j);
 while (j < len_str)
 {
 	a[j] = s2[j];
