@@ -23,9 +23,9 @@ a = malloc(i * sizeof(char));
 
 if (a == NULL)
 	return (NULL);
+	printf("i : %d",i);
 while (j < i)
 {
-	printf("test");
 	a[j] = str[j];
 	j++;
 }
