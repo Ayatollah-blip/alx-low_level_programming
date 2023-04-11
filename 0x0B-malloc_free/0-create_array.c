@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 /**
 * create_array - function
 * Description: function that prints a char
