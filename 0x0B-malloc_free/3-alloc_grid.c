@@ -20,7 +20,7 @@ if (a == NULL)
 while (j < height)
 {
 	a[j] = malloc(width * sizeof(int));
-	if (a[j] == NULL)
+	if (a[j] == 0)
 		return (NULL);
 	j++;
 }
