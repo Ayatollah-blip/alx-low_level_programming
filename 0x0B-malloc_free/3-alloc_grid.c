@@ -28,5 +28,5 @@ while (j <  height)
 	}
 	i++;
 }
-return (*a);
+return (a);
 }
