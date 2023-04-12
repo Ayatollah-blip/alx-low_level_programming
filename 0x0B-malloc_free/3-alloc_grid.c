@@ -24,10 +24,10 @@ while (j < height)
 		return (NULL);
 	j++;
 }
-while (j <  height)
+while (i <  height)
 {
 	j = 0;
-	while (i < width)
+	while (j < width)
 	{
 		a[i][j] = 0;
 		j++;
