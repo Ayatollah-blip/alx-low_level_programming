@@ -14,10 +14,14 @@ int **a;
 int i = 0, j = 0;
 
 
-a = malloc(width * height * sizeof(int));
+a = malloc(height * sizeof(int));
 if (a == NULL)
 	return (NULL);
-
+while (j < height)
+{
+	a[j] = malloc(width * sizeof(int));
+	j++;
+}
 while (j <  height)
 {
 	j = 0;
