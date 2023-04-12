@@ -22,7 +22,6 @@ while (j < height)
 	a[j] = malloc(width * sizeof(int));
 	j++;
 }
-j = 0;
 while (j <  height)
 {
 	j = 0;
