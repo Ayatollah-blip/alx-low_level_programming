@@ -14,7 +14,7 @@ char **a;
 int i = 0, j = 0;
 
 
-a = malloc(width * height * sizeof(char));
+a = malloc(width * height * sizeof(int));
 if (a == NULL)
 	return (NULL);
 
