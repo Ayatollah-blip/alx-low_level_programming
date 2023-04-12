@@ -23,12 +23,11 @@ while (i < len1)
 	a[i] = s1[i];
 	i++;
 }
-j = len2;
+j = len1;
 i= 0;
 while (i < len2)
 {
 	a[j] = s2[i];
-	printf("%c",s2[i]);
 	j++;
 	i++;
 }
