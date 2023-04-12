@@ -18,6 +18,7 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 len_str = len1 + len2;
 a = malloc((len_str + 1) * sizeof(char));
+
 while (i < len1)
 {
 	a[i] = s1[i];
@@ -31,5 +32,7 @@ while (i < len2)
 	j++;
 	i++;
 }
+
+free(a);
 return (a);
 }
