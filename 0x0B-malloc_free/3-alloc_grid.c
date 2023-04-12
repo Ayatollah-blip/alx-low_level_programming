@@ -17,11 +17,12 @@ int i = 0, j = 0;
 a = malloc(height * sizeof(int));
 if (a == NULL)
 	return (NULL);
+
 while (j < width)
 {
 	a[j] = malloc(width * sizeof(int));
-	if (a[j] == 0)
-		return (NULL);
+	/**if (a[j] == 0)
+		return (NULL);*/
 	j++;
 }
 while (i <  height)
