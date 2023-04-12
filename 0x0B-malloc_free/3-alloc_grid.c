@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* str_concat - function
+* alloc_grid - function
 * Description: function that concatenate two string
 *
 * @width: parameter that represent the width of the two domension array
@@ -14,16 +14,16 @@ int **a;
 int i = 0, j = 0;
 
 if (width == 0 && height == 0)
-	return NULL;
-a = malloc(height * sizeof(int*));
+	return (NULL);
+a = malloc(height * sizeof(int *));
 if (a == NULL)
 	return (NULL);
 
 while (j < height)
 {
 	a[j] = malloc(width * sizeof(int));
-	/**if (a[j] == 0)
-		return (NULL);*/
+	if (a[j] == 0)
+		return (NULL);
 	j++;
 }
 while (i <  height)
