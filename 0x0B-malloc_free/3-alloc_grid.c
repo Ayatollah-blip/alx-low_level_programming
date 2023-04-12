@@ -8,7 +8,7 @@
 *
 * Return: NULL if size is 0 or pointer if not
 */
-char **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 char *a;
 int i = 0, j;
