@@ -33,6 +33,5 @@ while (i < len2)
 	i++;
 }
 
-free(a);
 return (a);
 }
