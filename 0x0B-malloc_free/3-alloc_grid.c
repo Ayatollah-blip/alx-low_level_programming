@@ -14,7 +14,7 @@ int **a;
 int i = 0, j = 0;
 
 
-a = malloc(height * sizeof(int));
+a = malloc(height * sizeof(int*));
 if (a == NULL)
 	return (NULL);
 
