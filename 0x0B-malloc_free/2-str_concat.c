@@ -3,7 +3,7 @@
 * str_concat - function
 * Description: function that concatenate two string
 *
-* @s1: parameter that represent the string 
+* @s1: parameter that represent the string
 * @s2: parameter that represent the string
 *
 * Return: NULL if size is 0 or pointer if not
@@ -22,8 +22,8 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 len_str = len1 + len2;
 a = malloc((len_str + 1) * sizeof(char));
-if(a == NULL)
-	return NULL;
+if (a == NULL)
+	return (NULL);
 
 while (i < len1)
 {
@@ -31,7 +31,7 @@ while (i < len1)
 	i++;
 }
 j = len1;
-i= 0;
+i = 0;
 while (i < len2)
 {
 	a[j] = s2[i];
