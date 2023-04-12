@@ -22,6 +22,8 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 len_str = len1 + len2;
 a = malloc((len_str + 1) * sizeof(char));
+if(a == NULL)
+	return NULL;
 
 while (i < len1)
 {
