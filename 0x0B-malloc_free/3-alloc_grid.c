@@ -10,19 +10,23 @@
 */
 int **alloc_grid(int width, int height)
 {
-char *a;
-int j;
+char **a;
+int i = 0, j = 0;
 
 
 a = malloc(width * height * sizeof(char));
 if (a == NULL)
 	return (NULL);
 
-while (j < (width * height))
+while (j <  height)
 {
-	a[j] = 0;
-	j++;
+	j = 0;
+	while (i < width)
+	{
+		a[i][j] = 0;
+		j++;
+	}
+	i++;
 }
-
 return (*a);
 }
