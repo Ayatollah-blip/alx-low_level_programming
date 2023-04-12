@@ -14,6 +14,10 @@ char *a;
 int len1, len2, len_str;
 int i = 0, j;
 
+if (s1 == NULL)
+	s1 = "";
+if (s2 == NULL)
+	s2 = "";
 len1 = strlen(s1);
 len2 = strlen(s2);
 len_str = len1 + len2;
