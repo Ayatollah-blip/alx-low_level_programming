@@ -11,7 +11,7 @@
 int **alloc_grid(int width, int height)
 {
 char *a;
-int i = 0, j;
+int j;
 
 
 a = malloc(width * height * sizeof(char));
@@ -24,5 +24,5 @@ while (j < (width * height))
 	j++;
 }
 
-return (a);
+return (*a);
 }
