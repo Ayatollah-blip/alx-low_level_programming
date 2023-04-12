@@ -13,10 +13,7 @@ char **alloc_grid(int width, int height)
 char *a;
 int i = 0, j;
 
-if (width == NULL)
-	return NULL;
-if (height == NULL)
-	return NULL;
+
 a = malloc(width * height * sizeof(char));
 if (a == NULL)
 	return (NULL);
