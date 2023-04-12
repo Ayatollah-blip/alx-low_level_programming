@@ -18,11 +18,11 @@ a = malloc(width * height * sizeof(char));
 if (a == NULL)
 	return (NULL);
 
-	while (j < (width * height))
-	{
-		a[j] = 0;
-		j++;
-	}
+while (j < (width * height))
+{
+	a[j] = 0;
+	j++;
+}
 
 return (a);
 }
