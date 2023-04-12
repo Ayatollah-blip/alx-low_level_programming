@@ -24,7 +24,7 @@ while (j < height)
 	a[j] = malloc(width * sizeof(int));
 	if (a[j] == 0)
 	{
-		for(i = 0 ; i < width ; i++)
+		for (i = 0 ; i < width ; i++)
 			free(a[i]);
 		free(a);
 		return (NULL);
