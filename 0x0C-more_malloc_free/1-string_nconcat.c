@@ -22,8 +22,9 @@ if (s2 == NULL)
 len1 = strlen(s1);
 len2 = strlen(s2);
 if (n >= len2)
+{
 	n = len2;
-
+}
 len_str = len1 + n;
 a = malloc((len_str + 1) * sizeof(char));
 if (a == NULL)
@@ -36,7 +37,7 @@ while (i < len1)
 }
 j = len1;
 i = 0;
-while (i < n)
+while (i <= n)
 {
 	a[j] = s2[i];
 	j++;
