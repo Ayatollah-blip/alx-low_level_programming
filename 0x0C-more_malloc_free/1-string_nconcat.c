@@ -21,8 +21,9 @@ if (s2 == NULL)
 	s2 = "";
 len1 = strlen(s1);
 len2 = strlen(s2);
-if (n > len2)
+if (n >= len2)
 	n = len2;
+
 len_str = len1 + n;
 a = malloc((len_str + 1) * sizeof(char));
 if (a == NULL)
