@@ -22,7 +22,7 @@ if (ptr == NULL)
 {
 	return (NULL);
 }
-for (i = min ; i < max ; i++)
+for (i = min ; i <= max ; i++)
 {
 	ptr[i] = min;
 }
