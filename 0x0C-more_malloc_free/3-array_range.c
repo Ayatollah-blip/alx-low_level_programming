@@ -19,11 +19,11 @@ if (min > max)
 	return (NULL);
 
 ptr = malloc(len * sizeof(int));
-if (ptr == 0)
+if (ptr == NULL)
 {
 	return (NULL);
 }
-for (i = min ; i <= max ; i++)
+for (i = min ; i <= max + 1 ; i++)
 {
 	ptr[i] = i;
 }
