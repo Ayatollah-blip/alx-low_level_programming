@@ -8,23 +8,24 @@
 *
 * Return: pointer if success
 */
-void *array_range(int min, int max)
+int *array_range(int min, int max)
 {
 int *ptr;
- int i, len;
+int i, len;
 
-len = max - min;
+len = max - min + 1;
 
 if (min > max)
 	return (NULL);
+
 ptr = malloc(len * sizeof(int));
-if (ptr == NULL)
+if (ptr == 0)
 {
 	return (NULL);
 }
 for (i = min ; i <= max ; i++)
 {
-	ptr[i] = min;
+	ptr[i] = i;
 }
 return (ptr);
 }
