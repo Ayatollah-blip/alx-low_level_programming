@@ -15,7 +15,7 @@ int *ptr;
 
 len = max - min;
 
-if (nmemb == 0 || size == 0)
+if (min > max)
 	return (NULL);
 ptr = malloc(len * sizeof(int));
 if (ptr == NULL)
