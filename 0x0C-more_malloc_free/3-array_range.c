@@ -23,7 +23,7 @@ if (ptr == NULL)
 {
 	return (NULL);
 }
-for (i = 0 ; i <= max ; i++)
+for (i = 0 ; i <= (max - min) ; i++)
 {
 	ptr[i] = t++;
 }
