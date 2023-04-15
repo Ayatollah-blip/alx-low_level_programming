@@ -13,7 +13,7 @@ int i = 0, j = 0;
 
 while (j < height)
 {
-	while (!*grid)
+	while (i < height)
 	{
 		free(grid[i]);
 		i++;
