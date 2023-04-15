@@ -14,9 +14,9 @@ int i = 0, j = 0;
 
 while (j < height)
 {
-	for (i = 0 ; i < width ; i++)
-		free(a[i]);
-	free(a);
+	for (i = 0 ; i < height ; i++)
+		free(grid[i]);
+	free(grid);
 	j++;
 }
 }
