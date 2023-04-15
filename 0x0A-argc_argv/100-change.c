@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * main - converts a string to an integer
+ * main - Amounts of cents
  * @argc: count the argument input
  * @argv: table of arguments inputs
  *
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 
 int i, number, sum = 0;
-int tab[4]={25, 10, 2, 1};
+int tab[4] = {25, 10, 2, 1};
 
 if (argc != 2)
 {
