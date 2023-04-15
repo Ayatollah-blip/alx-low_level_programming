@@ -1,12 +1,11 @@
 #include "main.h"
 /**
-* alloc_grid - function
-* Description: function that concatenate two string
+* free_grid - function
+* Description: function that dealocate array
 *
-* @width: parameter that represent the width of the two domension array
+* @grid: parameter that represent the array to be freed
 * @height: parameter that represent the height of the two diemension array
 *
-* Return: NULL if size is 0 or pointer if not
 */
 void free_grid(int **grid, int height)
 {
