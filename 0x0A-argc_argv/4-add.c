@@ -19,11 +19,11 @@ int i, number,sum = 0;
 for (i = 1 ; i < argc ; i++)
 {
 	number = atoi(argv[i]);
-	if (number > 0)
-	{
+/*	if (number > 0)
+	{*/
 		sum = sum + number;
-	}
-	else if (number == 0)
+/*	}*/
+	/*else*/ if (number == 0)
 	{
 		printf("Error\n");
 		return (1);
