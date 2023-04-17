@@ -11,11 +11,13 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t Hmar;
+	dog_t myHmar;
+	dog_t *Hmar;
 
-	Hmar.name = name;
-	Hmar.age = age;
-	Hmar.owner = owner;
+	Hmar = &myHmar;
+	(*Hmar).name = name;
+	(*Hmar).age = age;
+	(*Hmar).owner = owner;
 
 return (Hmar);
 }
