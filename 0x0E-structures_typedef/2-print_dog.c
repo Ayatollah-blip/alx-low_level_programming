@@ -1,7 +1,7 @@
 #include "dog.h"
 /**
-* init_dog - function
-* description: function that initialize a struct
+* print_dog - function
+* description: function that print a struct
 *
 * @d: structure
 */
@@ -9,7 +9,7 @@ void print_dog(struct dog *d)
 {
 	if ((*d).name == NULL)
 		printf("Name: (nil)");
-	else 
+	else
 		printf("Name: %s\n", (*d).name);
 	if ((*d).age < 0)
 		printf("Age: (nil)");
