@@ -11,10 +11,12 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t myHmar;
 	dog_t *Hmar;
 
-	Hmar = &myHmar;
+	Hmar = malloc(sizeof(dog_t));
+
+	if (Hmar == NULL)
+		return NULL;
 	(*Hmar).name = name;
 	(*Hmar).age = age;
 	(*Hmar).owner = owner;
