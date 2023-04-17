@@ -7,13 +7,14 @@
 */
 void print_dog(struct dog *d)
 {
-	struct dog my_dog = d;
-	if (d == NULL)
-		break;
-	else if (d.name == NULL)
+	if ((*d).name == NULL)
 		printf("Name: (nil)");
-	else if (d.owner == NULL)
+	else if ((*d).owner == NULL)
 		printf("Owner: (nil)");
-	else
-	printf("Name: %s\nAge: 0.6f\nOwner: %s",mydog.name,mydog.age,mydog.owner);
+	else if (!d)
+		{
+		printf("Name: %s\n", (*d).name);
+		printf("Age: %0.6f\n", (*d).age);
+		printf("Owner: %s\n", (*d).owner);
+		}
 }
