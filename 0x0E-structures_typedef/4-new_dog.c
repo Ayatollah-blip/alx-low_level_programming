@@ -18,14 +18,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	len2 = strlen(owner) + 1;
 	Hmar = malloc(sizeof(dog_t));
 	if (Hmar == NULL)
-		return NULL;
+		return (NULL);
 	(*Hmar).name = malloc(sizeof(char) * len1);
 	if ((*Hmar).name == NULL)
-		return NULL;
+		return (NULL);
 	(*Hmar).owner = malloc(sizeof(char) * len2);
 	if ((*Hmar).owner == NULL)
-		return NULL;
-	
+		return (NULL);
 	strcpy((*Hmar).name, name);
 	(*Hmar).age = age;
 	strcpy((*Hmar).owner, owner);
