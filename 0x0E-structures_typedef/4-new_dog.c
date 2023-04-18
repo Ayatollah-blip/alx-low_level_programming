@@ -21,10 +21,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	(*Hmar).name = malloc(sizeof(char) * len1);
 	if ((*Hmar).name == NULL)
+	{
+		free(Hmar);
 		return (NULL);
+	}
 	(*Hmar).owner = malloc(sizeof(char) * len2);
 	if ((*Hmar).owner == NULL)
+	{
+		free(Hmar);
 		return (NULL);
+	}
 	strcpy((*Hmar).name, name);
 	(*Hmar).age = age;
 	strcpy((*Hmar).owner, owner);
