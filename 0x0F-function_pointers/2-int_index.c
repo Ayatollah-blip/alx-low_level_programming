@@ -8,6 +8,8 @@
 * @size: parameter function of size of the array
 *
 * @cmp: function of pointer to compare from the array
+*
+* Return: i if exist or -1 if problem
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
