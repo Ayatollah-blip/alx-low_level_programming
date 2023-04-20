@@ -22,17 +22,19 @@ num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 pt = argv[2];
 
+if (get_op_func(pt) == NULL || pt[1] != '\0')
+{
+	printf("Error\n");
+	exit(99);
+}
+
 if ((*pt == '/' && num2 == 0) ||
 	(*pt == '%' && num2 == 0))
 {
-	printf("Error");
+	printf("Error\n");
 	exit(100);
 }
-if (get_op_func(pt) == NULL)
-{
-	printf("Error");
-	return (99);
-}
+
 printf("%d\n", get_op_func(pt)(num1, num2));
 
 return (0);
