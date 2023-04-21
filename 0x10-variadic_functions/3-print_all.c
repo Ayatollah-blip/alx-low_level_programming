@@ -41,7 +41,8 @@ while (format[i])
 	sep = ", ";
 	i++;
 }
+}
 printf("\n");
 va_end(ap);
-}
+
 }
