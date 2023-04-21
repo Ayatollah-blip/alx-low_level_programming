@@ -31,9 +31,8 @@ while (format[i])
 		case 's':
 			str = va_arg(ap, char *);
 			if (str == NULL)
-				printf("%s(nil)", sep);
-			else
-				printf("%s%s", sep, str);
+				str = "(nil)";
+			printf("%s%s", sep, str);
 			break;
 		default:
 			i++;
