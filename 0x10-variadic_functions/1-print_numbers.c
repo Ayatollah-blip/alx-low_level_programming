@@ -15,10 +15,11 @@ if (n == 0)
 	return;
 
 va_start(ap, n);
-printf("%d", va_arg(ap, int));
-for (i = 1 ; i < n ; i++)
+for (i = 0 ; i < n ; i++)
 {
-	printf("%c %d", *separator, va_arg(ap, int));
+	printf("%d", va_arg(ap, int));
+	if (i != (n - 1) && separator != NULL)
+		printf("%s", separator);
 }
 printf("\n");
 va_end(ap);
