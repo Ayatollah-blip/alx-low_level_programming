@@ -13,6 +13,7 @@ while (head)
 {
 	list_t *temp = head;
 	head = head->next;
+	free(temp->str);
 	free(temp);
 }
 head = NULL;
