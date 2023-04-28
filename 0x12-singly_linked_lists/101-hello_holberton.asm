@@ -10,4 +10,4 @@ main:
 	ret
 
 
-msg: db "Hello, Holbrton\n", 0
+msg: db `Hello, Holbrton\n`, 0
