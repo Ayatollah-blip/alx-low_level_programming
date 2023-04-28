@@ -4,10 +4,9 @@ extern printf
 
 main:
 	mov edi, msg
-	xor eax, eax
+	xor eax, 0
 	call printf
-	mov eax, 0
 	ret
 
 
-msg: db `Hello, Holbrton\n`,0
+msg: db "Hello, Holbrton\n", 0
