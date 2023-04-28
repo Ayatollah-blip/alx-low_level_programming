@@ -4,7 +4,7 @@ extern printf
 
 main:
 	mov edi, msg
-	xor eax, 0
+	xor eax, eax
 	call printf
 	ret
 
