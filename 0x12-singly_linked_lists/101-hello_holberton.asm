@@ -5,15 +5,12 @@ global main
 
 
 main:
-	push msg
-	push msgformat
+	move edi, msg
+	xor eax, eax
 	call printf
-	add rsp, 16
 
-	mov eax, 1
-	xor ebx, ebx
-	int 0x80
+	mov eax, 0
+	ret
 
 SECTION .data
-msg: db "Hello, Holbrton\n", 0
-msgformat: db "%s", 0
+msg: db `Hello, Holbrton\n`, 0
