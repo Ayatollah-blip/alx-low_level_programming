@@ -6,6 +6,7 @@ main:
 	mov edi, msg
 	xor eax, eax
 	call printf
+	mov eax, 0
 	ret
 
 
