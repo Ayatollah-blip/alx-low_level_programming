@@ -1,13 +1,19 @@
-global main
+SECTION .text
+
 extern printf
+global main
 
 
 main:
-	mov edi, msg
-	xor eax, eax
+	push msg
+	push msgformat
 	call printf
-	mov eax, 0
-	ret
+	add rsp, 16
 
+	mov eax, 1
+	xor ebx, ebx
+	int 0x80
 
+SECTION .data
 msg: db "Hello, Holbrton\n", 0
+msgformat: db "%s", 0
