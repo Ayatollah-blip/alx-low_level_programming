@@ -17,7 +17,7 @@ if (!node)
 	return (NULL);
 
 node->n = n;
-node->next= NULL;
+node->next = NULL;
 if (temp == NULL)
 {
 	*head = node;
