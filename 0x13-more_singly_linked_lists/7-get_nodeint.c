@@ -19,7 +19,7 @@ for (i = 0 ; i < index ; i++)
 	head = (head)->next;
 	node = head;
 
-
+}
 return (node);
 }
 
