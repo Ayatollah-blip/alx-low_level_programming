@@ -12,5 +12,4 @@ main:
 	mov eax, 0
 	ret
 
-SECTION .data
 msg: db `Hello, Holbrton\n`, 0
