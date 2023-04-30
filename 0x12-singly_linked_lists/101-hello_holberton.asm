@@ -5,7 +5,7 @@ global main
 
 
 main:
-	move edi, msg
+	mov edi, msg
 	xor eax, eax
 	call printf
 
