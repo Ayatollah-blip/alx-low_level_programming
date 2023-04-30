@@ -1,8 +1,10 @@
 #include "lists.h"
 /**
-* free_listint2 - finction that return a integer from linked list
+* pop_listint - finction that pop a integer from linked list
 *
 * @head: this the linked list to be printed
+*
+* Return: the number to be poped
 */
 int pop_listint(listint_t **head)
 {
