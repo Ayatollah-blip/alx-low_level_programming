@@ -4,19 +4,21 @@
 *
 * @head: this the linked list to be printed
 */
-void free_listint2(listint_t **head)
+int pop_listint(listint_t **head)
 {
 listint_t *node;
+int n;
 
 if (*head == NULL)
-	return;
+	return (0);
 
-while (*head)
+else
 {
+	n = (*head)->n;
 	node = (*head)->next;
-	free(*head);
 	*head = node;
 }
 
+return (n);
 }
 
