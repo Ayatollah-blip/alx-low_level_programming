@@ -15,7 +15,7 @@ unsigned int i = 0;
 
 
 
-if (*head == null)
+if (*head == NULL)
 	return (-1);
 
 if (index == 0)
