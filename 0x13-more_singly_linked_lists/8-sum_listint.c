@@ -3,7 +3,6 @@
 * sum_listint - function that get the sum from linked list
 *
 * @head: this the linked list to be printed
-* @index: the index where the element you want to be fetched
 *
 * Return: the sum of all element you need
 */
