@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "lists.h"
 /**
 * print_listint - finction that prints a integer from linked list
 *
@@ -12,9 +12,11 @@ size_t i = 0;
 
 while (h)
 {
+
 printf("%d\n", h->n);
 h = h->next;
 i++;
+
 }
 
 return (i);
