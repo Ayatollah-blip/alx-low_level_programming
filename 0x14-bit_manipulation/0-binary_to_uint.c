@@ -47,7 +47,7 @@ else if (b[len - i - 1] == '1')
 {
 	a = 1;
 }
-else if (b[len - i] != '0' && b[len - i] != '1' && b[len - i] != '\0')
+else
 {
 	return (0);
 }
