@@ -18,7 +18,7 @@ if (index > 63)
 	return (-1);
 else
 {
-	*bit = (~(1UL << index) | *n);
+	*bit = ((0UL << index) & *n << index);
 	return (1);
 }
 }
