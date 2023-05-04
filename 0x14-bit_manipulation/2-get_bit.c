@@ -16,7 +16,7 @@ if (index > 63)
 	return (-1);
 else
 {
-	bit = n >> i;
+	bit = (n >> index) & 1;
 	return (bit);
 }
 }
