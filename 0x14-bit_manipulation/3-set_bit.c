@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* get_bit - function that bit based on index
+* set_bit - function that sets a bit based on index
 *
 * @n: number that we need to get from him the bit we need
 * @index: the index we want take the value of the bit
