@@ -17,11 +17,13 @@ int fp, w, len = 0;
 
 if (filename == NULL)
 	return (-1);
+if (text_content != NULL)
+{
 while (text_content[len])
 {
 len++;
 }
-
+}
 fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 600);
 w = write(fp, text_content, len);
 
