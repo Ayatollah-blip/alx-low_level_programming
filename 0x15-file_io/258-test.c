@@ -1,66 +1,40 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 /**
+* create_file - create text file
 *
+* @filename: name of the file
+* @text_content: content of the file
 *
-*
-*
+* Return: the real number of letters in file
 */
-int main (int argc, char *argv[])
+
+int create_file(const char *filename, char *text_content)
 {
-int rite, red, file_from, file_to;
-int c1,c2;
-char *buffer;
+int fp, w, len = 0;
 
 
-buffer = malloc(sizeof(char) * 1024);
+if (filename == NULL)
+	return (-1);
 
-if (argc != 3)
+if (text_content != NULL)
 {
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
-	exit(97);
+for (len = 0 ; text_content[len];)
+{
+	len++;
+}
 }
 
-file_from = open(argv[1],O_RDONLY);
-red = read(file_from,buffer,1024);
-file_to = open(argv[2],O_CREAT | O_WRONLY | O_APPEND);
+fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 600);
+w = write(fp, text_content, len);
 
-while (red > 0)
-{
-if (red == -1 || file_from == -1)
-{
-	dprintf(STDERR_FILENO, "Error: can't read from file %s",argv[1]);
-	free(buffer);
-	exit(98);
-}
-rite = write(file_to, buffer,red);
-if (file_to == -1 || rite == -1)
-{
-	dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
-	free(buffer);
-	exit(99);
-}
-red = read(file_from, buffer, 1024);
-file_to = open(argv[2], O_WRONLY | O_APPEND);
-}
-
-free(buffer);
-c1 = close(file_from);
-c2 = close(file_to);
+if (fp == -1 || w == -1)
+	return (-1);
 
 
-if (c1 == -1)
-{
-	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", c1);
-	exit(100);
-}
-if (c2 == -1)
-{
-	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", c2);
-	exit(100);
-}
 
-return (0);
+close(fp);
 
+return (1);
 }
