@@ -41,7 +41,7 @@ if (argc != 3)
 
 file_from = open(argv[1], O_RDONLY);
 red = read(file_from, buffer, 1024);
-file_to = open(argv[2], O_CREAT | O_WRONLY | O_APPEND);
+file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 664);
 
 while (red > 0)
 {
