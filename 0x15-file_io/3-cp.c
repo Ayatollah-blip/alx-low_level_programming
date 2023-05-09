@@ -18,6 +18,25 @@ if (c == -1)
 }
 }
 /**
+* Create_buffer - function alocate memory to a pointer
+*
+* @file: the pointer that needed memory to be allocated
+*
+* Return: buffer alocated memory
+*/
+char *Create_buffer(char *file)
+{
+char *buffer;
+
+buffer = malloc(sizeof(char) * 1024);
+if (buffer == NULL)
+{
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+	exit(99);
+}
+return (buffer);
+}
+/**
 * main - main function
 *
 * @argc: number of argument placed
@@ -31,19 +50,13 @@ int rite, red, file_from, file_to;
 char *buffer;
 
 
-buffer = malloc(sizeof(char) * 1024);
-if (buffer == NULL)
-{
-	dprintf(STDERR_FILENO,"Error: Can't write to %s\n",buffer);
-	exit(99);
-}
 
 if (argc != 3)
 {
 	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 	exit(97);
 }
-
+buffer = Create_buffer(argv[2]);
 file_from = open(argv[1], O_RDONLY);
 red = read(file_from, buffer, 1024);
 file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 664);
