@@ -35,7 +35,7 @@ buffer = malloc(sizeof(char) * 1024);
 
 if (argc != 3)
 {
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 	exit(97);
 }
 
@@ -47,7 +47,7 @@ while (red > 0)
 {
 if (red == -1 || file_from == -1)
 {
-	dprintf(STDERR_FILENO, "Error: can't read from file %s", argv[1]);
+	dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv[1]);
 	free(buffer);
 	exit(98);
 }
