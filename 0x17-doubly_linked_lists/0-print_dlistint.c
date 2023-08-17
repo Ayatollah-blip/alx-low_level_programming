@@ -1,4 +1,8 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
+
 /**
 * print_dlistint - function that prints doubly linked list
 * Description: chakhbat lakhabit
