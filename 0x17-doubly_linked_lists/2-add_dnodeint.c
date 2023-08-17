@@ -4,10 +4,11 @@
 #include "lists.h"
 
 /**
-* add_dnodeint - function that return length of linkd list
+* add_dnodeint - function that return new list with the new node
 * Description: chakhbat lakhabit
-* @h : pointer of the head of the list to be printed
-* Return: number of nodes
+* @head : pointer of the head of the list to be printed
+* @n : int number for the new node
+* Return: head node
 */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -16,9 +17,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	buffer = malloc(sizeof(dlistint_t));
 	if (buffer == NULL)
 		return (NULL);
-	
 	buffer->n = n;
-	buffer -> next = *head;
+	buffer->next = *head;
 	*head = buffer;
 	return (*head);
 }
