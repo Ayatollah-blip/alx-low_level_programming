@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
-* print_dlistint - function that prints doubly linked list
+* dlistint_len - function that return length of linkd list
 * Description: chakhbat lakhabit
 * @h : pointer of the head of the list to be printed
 * Return: number of nodes
