@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
 * insert_dnodeint_at_index  - function that return node from index
 * Description: chakhbat lakhabit
@@ -17,10 +16,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int i = 0;
 
 	buffer = malloc(sizeof(dlistint_t));
-	buffer->prev = NULL;
 	buffer->n = n;
-	buffer->next = NULL;
-
 	while (buf2)
 	{
 		if (i == idx)
@@ -29,6 +25,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			buffer->next = buf2;
 			if (buf2->next)
 				buf2->prev->next = buffer;
+			else
+				return (NULL);
 			buf2->prev = buffer;
 			return (buffer);
 		}
