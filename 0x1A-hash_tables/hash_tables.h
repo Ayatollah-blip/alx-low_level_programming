@@ -1,6 +1,6 @@
-#ifndef _MAIN_H_
+#ifndef HASH_TABLES_H
 
-#define _MAIN_H_
+#define HASH_TABLES_H
 
 #include <stdio.h>
 #include <stdlib.h>
