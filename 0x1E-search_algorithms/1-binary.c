@@ -7,21 +7,31 @@
  * @value: value to search for
  * Return: value if located and NULL if value is not present
  */
-int linear_search(int *array, size_t size, int value)
+int binary_search(int *array, size_t size, int value)
 {
-size_t i;
-
+int L = 0;
+int R = (int) size - 1;
+int i;
 if (array != NULL)
 {
-	for (i = 0; i < size; i++)
+	while (L <= R)
 	{
-		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
+		printf("Searching in array: ");
+		for (i = L; i < R; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
+		i = (L + R)/2;	
 		if (array[i] == value)
+			return i;
+		else if (array[i] > value)
 		{
-			return (i);
+			R = i - 1;
+		}
+		else if (array[i] < value)
+		{
+			L = i + 1;
 		}
 	}
-
 }
 return (-1);
 }
