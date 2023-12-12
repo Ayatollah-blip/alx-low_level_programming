@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * linear_search - Function that return index of value to be looked at
+ * binary_search - Function that return index of value to be looked at
  *
  * @array: pointer to the first element of the array
  * @size: number of element in array
@@ -20,9 +20,9 @@ if (array != NULL)
 		for (i = L; i < R; i++)
 			printf("%d, ", array[i]);
 		printf("%d\n", array[i]);
-		i = (L + R)/2;	
+		i = (L + R) / 2;
 		if (array[i] == value)
-			return i;
+			return (i);
 		else if (array[i] > value)
 		{
 			R = i - 1;
